@@ -10,10 +10,6 @@ def whats_coding(file):
             if detector.done:
                 break
         detector.close()
-        # data = fl.read()
-        # result = chardet.detect(data)
-        # s = data.decode(result['encoding'])
-        # print(s)
     return detector.result
 
 
@@ -42,8 +38,6 @@ def main():
             if my_format_file in f:
                 my_file = my_dir + f
                 top_ten_words(my_file)
-                # print(my_file)
-                # print(whats_coding(my_file))
 
 
 if __name__ == '__main__':
